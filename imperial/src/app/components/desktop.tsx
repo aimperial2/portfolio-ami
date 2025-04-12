@@ -33,13 +33,13 @@ const portfolioIcons: IconType[] = [
   {
     id: 'projects',
     title: 'Projects',
-    iconPath: '/icons/projects.png',
+    iconPath: '/icons/Egg_On_Toast_Icon.png',
     windowContent: <div className="p-4">My projects content goes here...</div>
   },
   {
     id: 'resume',
     title: 'Resume',
-    iconPath: '/icons/resume.png',
+    iconPath: '/icons/Cappuccino_Icon.png',
     windowContent: <div className="p-4">Resume content goes here...</div>
   },
   {
@@ -65,14 +65,12 @@ const DesktopIcon: React.FC<{
         <div className="w-full h-full bg-blue-400 rounded flex items-center justify-center text-white">
           {icon.title.charAt(0)}
         </div>
-        {/* Uncomment when you have icon images
         <Image 
           src={icon.iconPath} 
           alt={icon.title} 
           layout="fill" 
           className="pixel-art" 
         />
-        */}
       </div>
       <span className="text-sm text-white bg-black/50 px-1 rounded">{icon.title}</span>
     </div>
@@ -179,20 +177,19 @@ const Desktop: React.FC = () => {
 
   return (
     <div className="h-screen w-full relative bg-indigo-900 bg-opacity-75 overflow-hidden">
-      {/* You can replace this with your actual desktop background */}
-      {/* <Image src="/desktop-bg.png" layout="fill" objectFit="cover" /> */}
-      
-      {/* Desktop icons */}
-      <div className="grid grid-cols-6 gap-2 p-6">
-        {portfolioIcons.map(icon => (
-          <DesktopIcon 
-            key={icon.id}
-            icon={icon}
-            onClick={() => handleOpenWindow(icon.id)}
-          />
-        ))}
-      </div>
-      
+    {/* You can replace this with your actual desktop background */}
+    {/* <Image src="/desktop-bg.png" fill className="object-cover" /> */}
+    
+    {/* Desktop icons */}
+    <div className="grid grid-cols-6 gap-2 p-6">
+      {portfolioIcons.map(icon => (
+        <DesktopIcon 
+          key={icon.id}
+          icon={icon}
+          onClick={() => handleOpenWindow(icon.id)}
+        />
+      ))}
+    </div>
       {/* Windows */}
       {windows.map(window => (
         <Window
