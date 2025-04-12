@@ -1,4 +1,4 @@
-# Personal Desktop Website - Alyana Imperial
+# Desktop Website - Alyana Imperial
 
 A personal portfolio inspired by the look of WindowsXP desktop.
 
