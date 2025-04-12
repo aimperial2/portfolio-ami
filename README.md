@@ -1,8 +1,8 @@
-# Personal Website - Alyana Imperial
+# Personal Desktop Website - Alyana Imperial
 
 A personal portfolio inspired by the look of WindowsXP desktop.
 
-### In Progress...
+### Currently In Progress...
 
 TechStack: NextJS, TailwindCSS, HTML, Javascript, Vercel (deployment)
 
